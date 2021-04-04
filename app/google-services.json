@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "426546774727",
+    "project_id": "ticketify-d3ea8",
+    "storage_bucket": "ticketify-d3ea8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:426546774727:android:165393d4301127894734e2",
+        "android_client_info": {
+          "package_name": "com.example.ticketify"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "426546774727-j0ps0lbq35huemgis3vgo8rgv1dmol3q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDGw19I1WgeLj7ouT0A2ZRD2WsvCktid-4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "426546774727-j0ps0lbq35huemgis3vgo8rgv1dmol3q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

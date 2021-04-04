@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Ticketify</string>
+
+    <string-array name="questions">
+        <item>"What is your pet's name?"</item>
+        <item>"What was your childhood nickname?"</item>
+        <item>"What is your favorite teacher's name?"</item>
+        <item>"What is your favorite animal?"</item>
+    </string-array>
+
+</resources>
