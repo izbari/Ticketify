@@ -17,12 +17,12 @@ public class MainActivity extends AppCompatActivity
         Runnable r = new Runnable() {
             @Override
             public void run() {
-
                 startActivity(new Intent(MainActivity.this, SignInActivity.class));
+
             }
         };
         Handler h = new Handler();
-        h.postDelayed(r, 2000); // will be delayed for 2 seconds
+        h.postDelayed(r, 3000); // will be delayed for 2 seconds
 
         }
 
