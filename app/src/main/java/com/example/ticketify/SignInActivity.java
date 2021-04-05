@@ -83,6 +83,7 @@ public class SignInActivity extends AppCompatActivity {
                     Toast.makeText(SignInActivity.this, "Login successfully!", Toast.LENGTH_SHORT).show();
                     loadingBar.dismiss();
                     //startActivity(new Intent(SignInActivity.this,HomeActivity.class));
+                    startActivity(new Intent(SignInActivity.this,MainActivity.class));
                     finish();
 
                 }
