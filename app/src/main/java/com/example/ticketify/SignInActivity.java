@@ -66,10 +66,12 @@ public class SignInActivity extends AppCompatActivity {
         String email = loginEmail.getText().toString();
         String password = loginPassword.getText().toString();
 
+        if(TextUtils.isEmpty(email))
+            Toast.makeText(this, "Your email cannot be empty,please enter your email!", Toast.LENGTH_SHORT).show();
         if(TextUtils.isEmpty(email) && Patterns.EMAIL_ADDRESS.matcher(email).matches())
-            Toast.makeText(this, "Please enter your email!", Toast.LENGTH_SHORT).show();
-        if(TextUtils.isEmpty(password) && Patterns.EMAIL_ADDRESS.matcher(email).matches())
-            Toast.makeText(this, "Please enter your password!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "The Email format you entered is wrong", Toast.LENGTH_SHORT).show();
+        if(TextUtils.isEmpty(password))
+            Toast.makeText(this, "Your password cannot be empty,please enter your password!", Toast.LENGTH_SHORT).show();
         else
         {
             loadingBar.setTitle("Login...");
@@ -80,7 +82,7 @@ public class SignInActivity extends AppCompatActivity {
             mAuth.signInWithEmailAndPassword(email,password).addOnSuccessListener(new OnSuccessListener<AuthResult>() {
                 @Override
                 public void onSuccess(AuthResult authResult) {
-                    Toast.makeText(SignInActivity.this, "Login successfully!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(SignInActivity.this, "Login successful!", Toast.LENGTH_SHORT).show();
                     loadingBar.dismiss();
                     startActivity(new Intent(SignInActivity.this,HomeActivity.class));
                     finish();
