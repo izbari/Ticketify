@@ -73,7 +73,7 @@ public class SignInActivity extends AppCompatActivity {
         else
         {
             loadingBar.setTitle("Login...");
-            loadingBar.setMessage("Please wait...");
+            loadingBar.setMessage("Please wait.We are preparing home page for you.");
             loadingBar.setCanceledOnTouchOutside(true);
             loadingBar.show();
 
@@ -82,8 +82,7 @@ public class SignInActivity extends AppCompatActivity {
                 public void onSuccess(AuthResult authResult) {
                     Toast.makeText(SignInActivity.this, "Login successfully!", Toast.LENGTH_SHORT).show();
                     loadingBar.dismiss();
-                    //startActivity(new Intent(SignInActivity.this,HomeActivity.class));
-                    startActivity(new Intent(SignInActivity.this,MainActivity.class));
+                    startActivity(new Intent(SignInActivity.this,HomeActivity.class));
                     finish();
 
                 }
