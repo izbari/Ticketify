@@ -36,10 +36,10 @@ public class SignUpActivity extends AppCompatActivity {
 
         signupEmail         = findViewById(R.id.signupEmailInput);
         signUpPassword      = findViewById(R.id.signupPasswordInput);
-        signUpTextButton     = findViewById(R.id.editible);
+        signUpTextButton    = findViewById(R.id.editible);
         signUpPasswordAgain = findViewById(R.id.signupPasswordAgainInput);
         SignUpButton        = findViewById(R.id.signupbutton);
-        loadingBar         = new ProgressDialog(this);
+        loadingBar          = new ProgressDialog(this);
 
         signUpTextButton.setOnClickListener(new View.OnClickListener() {
             @Override

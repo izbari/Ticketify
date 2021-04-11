@@ -1,3 +1,44 @@
 <resources>
     <string name="app_name">Ticketify</string>
+
+
+    <string-array name="title" >
+        <item>Bahar Gelince Instagram Filtre
+            Çekilişi </item>
+        <item>Sevgililer Gününe Özel 40 TL
+            ParafPara</item>
+        <item>Burger Kingden Kaçırılmayacak
+             Fırsat</item>
+        <item>Vodofonlulara Özel 5GB Hediye </item>
+        <item>VakıfBank Worldcard
+            Kampanyası </item>
+        <item>Çocuklara Kotondan Müjde </item>
+        <item>Ticketify üyelerimize Hummeldan Kıyak! </item>
+    </string-array>
+
+    <string-array name="subtitle">
+        <item>Bahar Gelince isimli Instagram filtremizi
+            de-
+            ne hikayende bir arkadaşını et
+            iketle, bizden
+            bahset, çekilişimize
+            hemen katıl!</item>
+        <item>Paraf ile Ticketifyda 40 TL’ye Varan Paraf
+            Para Fırsatı!Devam Ediyor. Ticketifyda
+            tek seferde yapılacak 200 TL ve üzeri otobüs
+            bileti alışverişlerine 40 TL ParafPara hediye!</item>
+        <item>Ticketiftdan yapacağınız 150 TL ve üzeri al
+            -ımlarda Kral İkili menü sadece 39,99! </item>
+        <item>Ticketiftdan yapacağınız 200 TL ve üzeri al
+            -ımlarda Vodofonlulara  5GB internet hediye! </item>
+        <item>World kartla yapacağınız 200 TL ve üzeri
+            alışverişleriniz 20 TL wordpuan hediye! </item>
+        <item>Kotondan Ticketify üyelerine özel 23
+            nisan indirimleri sizleri bekliyor! </item>
+        <item>Hummeldan yapacağınız her 350 TL alımlarınızda
+            anında 50 TL indirim!</item>
+    </string-array>
+
+
+
 </resources>
