@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    android:orientation="horizontal">
+
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="119dp"
+        android:layout_height="140dp"
+        android:cropToPadding="true"
+        android:paddingTop="5dp"
+        android:paddingRight="10dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/burgerking" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/başlık"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Main title"
+            android:textColor="#1D72AB"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/acıklama"
+            android:layout_width="match_parent"
+            android:layout_height="116dp"
+            android:text="Sub title "
+            android:textColor="#FFFFFF"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</LinearLayout>
