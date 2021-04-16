@@ -5,85 +5,20 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#262626"
-    tools:context=".HomeActivity">
+    tools:context=".BottomNavigator">
+
 
     <ImageView
         android:id="@+id/imageView4"
-        android:layout_width="413dp"
-        android:layout_height="100dp"
+        android:layout_width="403dp"
+        android:layout_height="86dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="27dp"
         app:layout_constraintBottom_toTopOf="@+id/imageButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/logo" />
-
-
-    <ListView
-        android:id="@+id/discountList"
-        android:layout_width="360dp"
-        android:layout_height="358dp"
-        android:clickable="false"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView" />
-
-    <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="0dp"
-        android:layout_height="80dp"
-        android:background="#AD1D72AB"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
-
-        <ImageButton
-            android:id="@+id/homebutton"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_weight="1"
-            android:background="#FFFFFF"
-            android:scaleType="fitXY"
-            app:srcCompat="@drawable/clickedhome" />
-
-        <ImageButton
-            android:id="@+id/searchbutton"
-            android:layout_width="80dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="#FFFFFF"
-            android:scaleType="fitXY"
-            app:srcCompat="@drawable/search1" />
-
-        <ImageButton
-            android:id="@+id/imageButton4"
-            android:layout_width="80dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="#FFFFFF"
-            android:scaleType="fitXY"
-            app:srcCompat="@drawable/ticket1" />
-
-        <ImageButton
-            android:id="@+id/imageButton5"
-            android:layout_width="80dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="#2E2323"
-            android:scaleType="fitXY"
-            app:srcCompat="@drawable/help1" />
-
-        <ImageButton
-            android:id="@+id/imageButton6"
-            android:layout_width="80dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="#070707"
-            android:scaleType="fitXY"
-            app:srcCompat="@drawable/account1" />
-
-    </LinearLayout>
 
     <HorizontalScrollView
         android:id="@+id/horizontalScrollView"
@@ -91,11 +26,12 @@
         android:layout_height="130dp"
         android:layout_marginStart="59dp"
         android:layout_marginLeft="59dp"
-        android:layout_marginEnd="59dp"
-        android:layout_marginRight="59dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="53dp"
+        android:layout_marginRight="53dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4">
+        app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
             android:layout_width="300dp"
@@ -103,7 +39,7 @@
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/textView49"
+                android:id="@+id/anno1"
                 android:layout_width="250dp"
                 android:layout_height="120dp"
                 android:layout_marginStart="40dp"
@@ -115,10 +51,10 @@
                 android:gravity="center"
                 android:text="In the normalization process that  started on March 1, 2021, our users  who bought tickets will be exempted  from the curfew"
                 android:textColor="#FFFFFF"
-                android:textSize="16sp" />
+                android:textSize="14sp" />
 
             <TextView
-                android:id="@+id/textView7"
+                android:id="@+id/anno2"
                 android:layout_width="250dp"
                 android:layout_height="120dp"
                 android:layout_marginStart="40dp"
@@ -131,10 +67,10 @@
                 android:gravity="center"
                 android:text="In the normalization process that  started on March 1, 2021, our users  who bought tickets will be exempted  from the curfew"
                 android:textColor="#FFFFFF"
-                android:textSize="16sp" />
+                android:textSize="14dp" />
 
             <TextView
-                android:id="@+id/textView8"
+                android:id="@+id/anno3"
                 android:layout_width="250dp"
                 android:layout_height="120dp"
                 android:layout_marginStart="40dp"
@@ -147,7 +83,7 @@
                 android:gravity="center"
                 android:text="In the normalization process that  started on March 1, 2021, our users  who bought tickets will be exempted  from the curfew"
                 android:textColor="#FFFFFF"
-                android:textSize="16sp" />
+                android:textSize="14dp" />
 
         </LinearLayout>
     </HorizontalScrollView>
@@ -156,19 +92,30 @@
         android:id="@+id/imageButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="25dp"
-        android:layout_marginLeft="25dp"
-        android:layout_marginTop="25dp"
-        android:layout_marginEnd="3dp"
-        android:layout_marginRight="3dp"
+        android:layout_marginBottom="50dp"
         android:background="#262626"
         android:clickable="false"
         android:rotation="0"
-        app:layout_constraintBottom_toTopOf="@+id/horizontalScrollView"
+        app:layout_constraintBottom_toTopOf="@+id/recyclerView"
         app:layout_constraintEnd_toStartOf="@+id/horizontalScrollView"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/announcement" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="366dp"
+        android:layout_height="395dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="98dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginRight="23dp"
+        android:layout_marginBottom="38dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

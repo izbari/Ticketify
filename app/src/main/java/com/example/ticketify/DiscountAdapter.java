@@ -1,43 +1,54 @@
 package com.example.ticketify;
-import android.content.Context;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
-
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-
+import androidx.recyclerview.widget.RecyclerView;;
+import com.squareup.picasso.Picasso;
 import java.util.ArrayList;
 
+public class DiscountAdapter extends RecyclerView.Adapter<DiscountAdapter.MyViewHolder> {
 
+    private ArrayList<Discount> entries;
 
-public class DiscountAdapter extends ArrayAdapter<discounts> {
-    private ArrayList<discounts> list;
-
-    public DiscountAdapter(@NonNull Context context, int resource,ArrayList<discounts> list) {
-        super(context, resource,list);
-        this.list=list;
-
+    public DiscountAdapter(ArrayList<Discount> entries){
+        this.entries = entries;
     }
 
-    @NonNull
     @Override
-    public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
-        int phraseIndex =position;
-        if(convertView==null){
-            convertView= LayoutInflater.from(getContext()).inflate(R.layout.discounts,parent,false);
+    public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+
+        View itemView = LayoutInflater.from(parent.getContext()).inflate(R.layout.fragment_discounts, null);
+
+        return new MyViewHolder(itemView);
+    }
+
+    @Override
+    public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
+        holder.title.setText(entries.get(position).getTitle());
+        holder.description.setText(entries.get(position).getDescription());
+        Picasso.get().load(entries.get(position).getImgURL()).into(holder.imgIcon);
+    }
+
+
+    @Override
+    public int getItemCount() {
+        return entries.size();
+    }
+
+    public class MyViewHolder extends RecyclerView.ViewHolder {
+
+        TextView title, description;
+        ImageView imgIcon;
+
+        public MyViewHolder(View itemView) {
+            super(itemView);
+            title = (TextView) itemView.findViewById(R.id.başlık);
+            description = (TextView) itemView.findViewById(R.id.acıklama);
+            imgIcon = (ImageView) itemView.findViewById(R.id.img);
         }
-        ImageView images =convertView.findViewById(R.id.img);
-        TextView title = convertView.findViewById(R.id.başlık);
-        TextView description = convertView.findViewById(R.id.acıklama);
-
-        images.setImageResource(list.get(position).getImgID());
-        title.setText(list.get(position).getTitle());
-        description.setText(list.get(position).getDescription());
-        return convertView;
-
     }
 }

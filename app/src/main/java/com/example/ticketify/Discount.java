@@ -1,26 +1,31 @@
 package com.example.ticketify;
 
-public class discounts {
+public class Discount {
     private String title;
     private String description;
-    private int imgID;
+    private String imgURL;
 
+    public void Discount() {
 
-    public discounts(String title, String description, int imgID) {
+    }
+
+    public Discount(String title, String description, String imgURL) {
         this.title = title;
         this.description = description;
-        this.imgID = imgID;
+        this.imgURL = imgURL;
     }
 
     public String getTitle() {
         return title;
     }
 
+    public String getImgURL() {
+        return imgURL;
+    }
+
     public String getDescription() {
         return description;
     }
 
-    public int getImgID() {
-        return imgID;
-    }
+
 }
