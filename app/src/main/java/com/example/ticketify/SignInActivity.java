@@ -82,7 +82,12 @@ public class SignInActivity extends AppCompatActivity {
                 public void onSuccess(AuthResult authResult) {
                     Toast.makeText(SignInActivity.this, "Login successful!", Toast.LENGTH_SHORT).show();
                     loadingBar.dismiss();
+<<<<<<< HEAD
                     startActivity(new Intent(SignInActivity.this, BottomNavigator.class));
+=======
+                   
+  
+>>>>>>> 5502a7ce7498517d8f4a6eaa337735ccee0ec1f0
                     finish();
 
                 }
