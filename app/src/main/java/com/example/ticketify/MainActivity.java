@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 
+import com.google.android.material.bottomnavigation.BottomNavigationMenu;
 import com.google.android.material.navigation.NavigationView;
 
 public class MainActivity extends AppCompatActivity
@@ -19,7 +20,7 @@ public class MainActivity extends AppCompatActivity
         Runnable r = new Runnable() {
             @Override
             public void run() {
-                startActivity(new Intent(MainActivity.this, SignInActivity.class));
+                startActivity(new Intent(MainActivity.this, BottomNavigator.class));
 
             }
         };

@@ -18,10 +18,13 @@ public class BottomNavigator extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bottom_navigator);
+
+
          BottomNavigationView bottomNavigation = findViewById(R.id.navigationbar);
          bottomNavigation.setOnNavigationItemSelectedListener(navListener);
          getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container
                             ,new Home_Fragment()).commit();
+
     }
 
 
